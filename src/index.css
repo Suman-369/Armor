@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+
+@import "tailwindcss";
+
+/* === COLORS === */
+.text-primary {
+  color: #aa6d6b;
+}
+.bg-primary {
+  background-color: #aa6d6b;
+}
+.text-brand-dark {
+  color: #151616;
+}
+.bg-brand-dark {
+  background-color: #151616;
+}
+
+/* === FONT FAMILIES === */
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+.font-varela {
+  font-family: "Varela Round", sans-serif;
+}
+
+/* === CONTAINER === */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
