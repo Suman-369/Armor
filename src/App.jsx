@@ -7,8 +7,11 @@ import Banner from './components/Banner'
 import BannarTxt from './components/BannarTxt'
 import Blog from './components/Blog'
 import Footer from './components/Footer'
+import { useState } from 'react';
+import SignInSignUp from './components/SignInSignUp';
 
 const App = () => {
+  const [showAuth, setShowAuth] = useState(false);
   return (
       <main className='overflow-x-hidden'>
        <UpdateFollower
@@ -20,7 +23,7 @@ const App = () => {
         }
        }
        >
-        <Nav />
+        <Nav onAuthClick={() => setShowAuth(true)} />
         <Hero />
         </UpdateFollower>
         <UpdateFollower
@@ -38,6 +41,7 @@ const App = () => {
         <Blog />
         <Footer />
         </UpdateFollower>
+        {showAuth && <SignInSignUp onClose={() => setShowAuth(false)} />}
       </main>
   )
 }

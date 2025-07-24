@@ -13,7 +13,7 @@ const NavMenu = [
 ];
 
 
-const Nav = () => {
+const Nav = (props) => {
   return (
    <>
    <div className='bg-brand-dark text-white py-6 font-varela'>
@@ -56,7 +56,10 @@ const Nav = () => {
                         }
                         >
                 <div>
-                   <button className='text-xl ps-14'>
+                   <button
+                     className='bg-primary text-white font-semibold rounded-full px-6 py-2 shadow-lg transition-all duration-300 ease-in-out hover:bg-white hover:text-primary hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2'
+                     onClick={props.onAuthClick}
+                   >
                     Log In
                    </button>
                 </div>
