@@ -6,7 +6,7 @@ import { fadeUp } from './Services'
 const Banner = () => {
   return (
     <>
-    <section className="overflow-x-hidden">
+    <section id="banner" className="overflow-x-hidden">
         <div className='container py-14 grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 gap-12'>
         <div>
             <motion.img 

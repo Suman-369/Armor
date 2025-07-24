@@ -67,7 +67,7 @@ const headphoneData =[
     
     ]
 
-const Hero = () => {
+const Hero = (props) => {
   const [activeData,setActiveData] = React.useState(headphoneData[0])
 
  const handleActiveData = (data)=>{
@@ -77,7 +77,7 @@ const Hero = () => {
 
   return (
     <>
-    <section className='bg-brand-dark text-white font-varela'>
+    <section className='bg-brand-dark text-white font-varela' {...props}>
         <div className='container grid grid-cols-1 md:grid-cols-2 min-h-[700px]'>
             <div className='flex  flex-col justify-center py-14 md:py-0 xl:max-w-[500px]'>
               <div className='space-y-5 md:text-left text-center'>

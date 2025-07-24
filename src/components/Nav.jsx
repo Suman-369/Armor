@@ -2,14 +2,15 @@
 import { MdMenu } from 'react-icons/md';
 import {motion} from "framer-motion"
 import { UpdateFollower } from 'react-mouse-follower';
-import gsap from 'gsap';
+import { NavLink } from "react-router-dom";
+
 
 const NavMenu = [
-    { id: 1, title: 'Home' },
-    { id: 2, title: 'Product' },
-    { id: 3, title: 'Blog' },
-    { id: 4, title: 'About' },
-    { id: 5, title: 'Contact' }
+    { id: 1, title: 'Home', to: '/' },
+    { id: 2, title: 'Services', to: '/services' },
+    { id: 3, title: 'Blog', to: '/blog' },
+    { id: 4, title: 'About', to: '/banner',},
+    { id: 5, title: 'Contact', to: '/contact' }
 ];
 
 
@@ -30,17 +31,23 @@ const Nav = (props) => {
                 {NavMenu.map((item)=>(
                     <li key={item.id}>
                         <UpdateFollower
-                        mouseOptions={
-                            {
-                                backgroundColor:"white",
-                                zIndex:999,
-                                followSpeed:1.5,
-                                scale:5,
-                                mixBlendMode:'difference',
-                            }
-                        }
+                        mouseOptions={{
+                            backgroundColor:"white",
+                            zIndex:999,
+                            followSpeed:1.5,
+                            scale:5,
+                            mixBlendMode:'difference',
+                        }}
                         >
-                        <a href="#" className='inline-block text-sm py-2 px-3 uppercase'>{item.title}</a>
+                        {item.title === 'About' ? (
+                          <NavLink to="/about" className='inline-block text-sm py-2 px-3 uppercase'>
+                            {item.title}
+                          </NavLink>
+                        ) : (
+                          <NavLink to={item.to} className='inline-block text-sm py-2 px-3 uppercase'>
+                            {item.title}
+                          </NavLink>
+                        )}
                         </UpdateFollower>
                     </li>
                 ))}

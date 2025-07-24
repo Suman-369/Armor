@@ -18,10 +18,10 @@ const itemVariants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeInOut" } }
 }
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <>
-    <footer className ='bg-[#aa6d6b] pt-12 pb-8 text-white'>
+    <footer className ='bg-[#aa6d6b] pt-12 pb-8 text-white' {...props}>
         <div className='container py-14 overflow-hidden'>
             <motion.div
               className='grid grid-cols-1 md:grid-cols-3 gap-8'

@@ -79,3 +79,7 @@
 .animate-pop {
   animation: pop 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+html {
+  scroll-behavior: smooth;
+}

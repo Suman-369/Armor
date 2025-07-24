@@ -37,11 +37,11 @@ const blogData = [
     }
 ]
 
-const Blog = () => {
+const Blog = (props) => {
   return (
     <>
     
-    <section className=' bg-amber-50'>
+    <section className=' bg-amber-50' {...props}>
         <div className='container py-14'>
             <h1 className='text-4xl sm:text-5xl font-extrabold text-center pb-8  relative'
             >Latest Blog</h1>

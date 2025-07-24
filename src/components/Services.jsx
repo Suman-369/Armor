@@ -48,10 +48,10 @@ const servicesData = [
 }
 
 
-const Services = () => {
+const Services = (props) => {
   return (
     <>
-    <section className='bg-gray-200 py-8 font-poppins'>
+    <section className='bg-gray-200 py-8 font-poppins' {...props}>
         <div className='container py-14'>
             <motion.h1
                 variants={fadeUp(0.2)}
