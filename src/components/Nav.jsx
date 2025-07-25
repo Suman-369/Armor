@@ -1,8 +1,9 @@
 
-import { MdMenu } from 'react-icons/md';
+import { MdMenu, MdClose } from 'react-icons/md';
 import {motion} from "framer-motion"
 import { UpdateFollower } from 'react-mouse-follower';
 import { NavLink } from "react-router-dom";
+import { useState } from 'react';
 
 
 const NavMenu = [
@@ -15,6 +16,7 @@ const NavMenu = [
 
 
 const Nav = (props) => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
    <>
    <div className='bg-brand-dark text-white py-6 font-varela'>
@@ -74,10 +76,55 @@ const Nav = (props) => {
             </ul>
         </div>
 
-        <div className='md:hidden'>
-            <MdMenu className='text-4xl'></MdMenu>
+        <div className='md:hidden z-50'>
+            <button
+              aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+              onClick={() => setMobileMenuOpen(v => !v)}
+              className='focus:outline-none'
+            >
+              {mobileMenuOpen ? (
+                <MdClose className='text-4xl transition-transform duration-300 rotate-90' />
+              ) : (
+                <MdMenu className='text-4xl transition-transform duration-300' />
+              )}
+            </button>
         </div>
     </motion.nav>
+    {/* Mobile Menu Overlay */}
+    {mobileMenuOpen && (
+      <motion.div
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -40 }}
+        transition={{ duration: 0.4, type: 'spring', bounce: 0.2 }}
+        className='fixed inset-0 bg-brand-dark bg-opacity-95 flex flex-col items-center justify-center gap-8 z-40 animate-pop'
+      >
+        <ul className='flex flex-col gap-8 w-full items-center'>
+          {NavMenu.map((item) => (
+            <li key={item.id} className='w-full text-center'>
+              <NavLink
+                to={item.title === 'About' ? '/about' : item.to}
+                className='block text-2xl font-semibold py-3 px-6 rounded-lg hover:bg-primary hover:text-white transition-colors duration-200 uppercase tracking-wide'
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.title}
+              </NavLink>
+            </li>
+          ))}
+          <li className='w-full text-center'>
+            <button
+              className='bg-primary text-white font-semibold rounded-full px-8 py-3 shadow-lg transition-all duration-300 ease-in-out hover:bg-white hover:text-primary hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-lg w-4/5 mx-auto'
+              onClick={() => {
+                setMobileMenuOpen(false);
+                if (props.onAuthClick) props.onAuthClick();
+              }}
+            >
+              Log In
+            </button>
+          </li>
+        </ul>
+      </motion.div>
+    )}
    </div>
    </>
   )
