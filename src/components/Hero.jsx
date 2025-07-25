@@ -187,7 +187,7 @@ const Hero = (props) => {
                      </div>
                      <div className='space-y-2'>
                       <p className='text-base font-bold'>{item.price}</p>
-                      <p className='text-xs font-normal text-nowrap'>{item.model}</p>
+                      <p className='text-[10px] sm:text-xs font-normal text-nowrap'>{item.model}</p>
                      </div>
                     </div>
                     </UpdateFollower>
