@@ -10,7 +10,7 @@ const blogData = [
     {
         id:4,
         img:Blog4,
-        title:"The Best Headphones For 2025",
+        title:"About The Armor",
         desc:"The Armor headphones are marketed as offering immersive sound, rich bass, clear mids, and sharp treble, ideal for zero-latency gaming and high-quality audio, at an accessible price point of Rs. 2,999. A YouTube video further details this launch .",
         link:"#"
     },
@@ -18,7 +18,7 @@ const blogData = [
         id:1,
         img:Blog1,
         title:"Solid, high-performance, stylish gaming audio",
-        desc:"Lorem ipsum dolor sit amet No Gimmicks, just a solid all-rounder for gamers who want performance without compromise and style without flashiness. It’s a fresh take on gaming audio aesthetics that doesn’t scream “RGB Everything” - instead, it feels refined but still fun adipisicing elit. Quisquam, quos.",
+        desc:"No Gimmicks, just a solid all-rounder for gamers who want performance without compromise and style without flashiness. It’s a fresh take on gaming audio aesthetics that doesn’t scream “RGB Everything”.",
         link:"#"
     },
     {

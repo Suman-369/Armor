@@ -42,7 +42,7 @@ const headphoneData =[
       title:"Version.H1",
       price:"₹2,999",
       description:"7.1 Surround Sound , Detachable Microphone , Comfortable Fabric Earcups , In-line audio controller ,Made for PC, Laptop & Console Use",
-      model:"Model Orange",
+      model:" Model Orange",
       bgColor:"#8b5958",
       image:Headphone
     },
