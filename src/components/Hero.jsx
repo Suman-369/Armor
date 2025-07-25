@@ -39,27 +39,27 @@ const fadeUp = (delay = 0) => {
 const headphoneData =[
     {
       id:1,
-      title:"Headphone",
-      price:100,
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos",
-      model:"Model Brown",
+      title:"Version.H1",
+      price:"₹2,999",
+      description:"7.1 Surround Sound , Detachable Microphone , Comfortable Fabric Earcups , In-line audio controller ,Made for PC, Laptop & Console Use",
+      model:"Model Orange",
       bgColor:"#8b5958",
       image:Headphone
     },
     {
       id:2,
-      title:"Headphone2",
-      price:100,
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos",
+      title:"Version.H2",
+      price:"₹2,999",
+      description:"7.1 Surround Sound , Detachable Microphone , Comfortable Fabric Earcups , In-line audio controller ,Made for PC, Laptop & Console Use",
       model:"Lime Green",
       bgColor:"#638153",
       image:Headphone2
     },
     {
       id:3,
-      title:"Headphone3",
-      price:100,
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos",
+      title:"Version.H3",
+      price:"₹2,999",
+      description:"7.1 Surround Sound , Detachable Microphone , Comfortable Fabric Earcups , In-line audio controller ,Made for PC, Laptop & Console Use",
       model:"Ocean Blue",
       bgColor:"#5d818c",
       image:Headphone3
@@ -196,7 +196,7 @@ const Hero = (props) => {
               </motion.div>
             </div>
             </div>
-              <div className='flex flex-col justify-end items-center overflow-hidden' >
+              <div className='flex flex-col justify-end items-center overflow-hidden pb-15' >
 
                 <AnimatePresence mode='wait'>
                 <motion.img 

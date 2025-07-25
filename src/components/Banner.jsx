@@ -1,5 +1,5 @@
 import React from 'react'
-import Headphone4 from '../assets/headphone4.png'
+import Headphone4 from '../assets/headphone.png'
 import {motion} from 'framer-motion'
 import { UpdateFollower } from 'react-mouse-follower'
 import { fadeUp } from './Services'

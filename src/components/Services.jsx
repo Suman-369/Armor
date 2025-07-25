@@ -1,31 +1,47 @@
 import React from 'react'
 import Icon1 from '../assets/icons/obj1.png'
 import Icon2 from '../assets/icons/obj2.png'
-import Icon3 from '../assets/icons/obj3.png'
+import Icon3 from '../assets/icons/obj3.jpg';
+import Icon4 from '../assets/icons/obj4.png';
+import Icon5 from '../assets/icons/obj5.png';
 import { UpdateFollower } from 'react-mouse-follower'
 import { motion } from 'framer-motion'
 
 const servicesData = [
     {
         id:1,
-        title:"Free Shipping",
+        title:"Immersive Audio",
         icon:Icon1,
-        description:"Free shipping on all orders over $100",
+        description:"As the name suggests, surround sound makes it feel like the audio’s coming from all around you—not just left and right. You’ll catch the subtle details, background sounds, and every little moment like you’re right in the middle of it.",
         delay:0.5,
     },
     {
         id:2,
-        title:"Free Shipping",
+        title:"Mic'd Right",
         icon:Icon2,
-        description:"Free shipping on all orders over $100",
+        description:"The mic blocks out background sound and focuses on just your voice. Its unidirectional design keeps distractions away, and the detachable feature makes it super convenient when you need it. Whether you're on a call, streaming, or recording, this mic makes sure you sound crystal clear every time.",
         delay:0.8,
     },
     {
         id:3,
-        title:"Free Shipping",
+        title:"Cloud Cushion",
         icon:Icon3,
-        description:"Free shipping on all orders over $100",
+        description:"Made with breathable fabric, these earcups stay cool, resist wear, and feel soft —even through long hours of use. No peeling, no overheating—just comfort.",
         delay:1.1,
+    },
+    {
+        id:4,
+        title:"Carefully Curated",
+        icon:Icon4,
+        description:"Bored of black and blue? So were we. That’s why we picked colors you’ve probably never seen on headphones before. A little louder, a little bolder—because safe is boring, and these aren’t meant to blend in.",
+        delay:1.4,
+    },
+    {
+        id:5,
+        title:"Cntrol Hub",
+        icon:Icon5,
+        description:"In-line Audio Controller Our in-line controller lets you adjust volume with a smooth knob, toggle the mic on/off instantly, switch EQ modes based on what you're playing, and even change the LED colours of the loop lights— all in one compact unit, that’s weirdly satisfying to use.",
+        delay:1.7,
     }
 ]
 

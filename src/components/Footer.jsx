@@ -1,5 +1,5 @@
 import React from 'react'
-import {  FaFacebook, FaInstagram, FaPhone, FaTelegram, FaTwitter } from 'react-icons/fa'
+import {  FaFacebook, FaInstagram, FaLinkedin, FaMailBulk,  FaTelegram, FaTwitter } from 'react-icons/fa'
 import { FaMapLocation } from 'react-icons/fa6'
 import Cards from '../assets/credit-cards.webp'
 import {motion} from 'framer-motion'
@@ -35,16 +35,19 @@ const Footer = (props) => {
                   className='space-y-6'>
                     <h1 className='text-3xl font-bold'>Playing</h1>
                     <p className='text-sm max-w-[300px]'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+                    Portal Ventures Pvt. Ltd.
+                    Ruby Towers, 29 Senapati Bapat Marg
+                    Dadar - West
+                    Mumbai, India, 400028
                     </p>
                    <div className='space-y-6'>
                    <p className='flex items-center gap-2 mt-4'>
-                        <FaPhone></FaPhone>
-                        +91 9876543210
+                        <FaMailBulk></FaMailBulk>
+                        helpdesk@armor.business
                     </p>
                     <p className='flex items-center gap-2 mt-2'>
                         {""}
-                        <FaMapLocation></FaMapLocation> Up,Bihar
+                        <FaMapLocation></FaMapLocation> Mumbai, India, 400028
                     </p>
                    </div>
                 </motion.div>
@@ -79,10 +82,10 @@ const Footer = (props) => {
                     className='space-y-6'>
                     <h1 className='text-3xl font-bold'>Follow Us</h1>
                     <div className='flex items-center gap-4'>
-                        <FaFacebook className='text-3xl hover:scale-105 duration-300'></FaFacebook>
-                        <FaInstagram className='text-3xl hover:scale-105 duration-300'></FaInstagram>
-                        <FaTwitter className='text-3xl hover:scale-105 duration-300'></FaTwitter>
-                        <FaTelegram className='text-3xl hover:scale-105 duration-300'></FaTelegram>
+                   
+                        <a href=" https://www.linkedin.com/company/armor-co/"><FaLinkedin className='text-3xl hover:scale-105 duration-300'></FaLinkedin></a>
+                        <a href="https://www.instagram.com/armor.space/"><FaInstagram className='text-3xl hover:scale-105 duration-300'></FaInstagram></a>
+                        
                     </div>
                     <motion.div 
                       variants={itemVariants}

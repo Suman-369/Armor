@@ -83,3 +83,26 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Hide horizontal scroll bar and unwanted vertical scroll bars globally */
+html, body, #root {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Optional: Hide scrollbars except for vertical on right side (Webkit browsers) */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Hide scrollbars for all elements except body */
+*:not(body)::-webkit-scrollbar {
+  display: none;
+}
